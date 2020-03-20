@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IActivity } from '../../models/activity';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-what-section',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhatSectionComponent implements OnInit {
 
-  constructor() { }
+  activities: IActivity[];
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.activities = this.dataService.getActivities();
   }
 
 }

@@ -1,9 +1,9 @@
 <section class="pb-20 bg-gray-300 -mt-24">
   <div class="container mx-auto px-4">
     <div class="flex flex-wrap">
-      <app-info-card class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center"></app-info-card>
-      <app-info-card class="w-full md:w-4/12 px-4 text-center"></app-info-card>
-      <app-info-card class="pt-6 w-full md:w-4/12 px-4 text-center"></app-info-card>
+      <app-activity-card [activity]="activities[0]" class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center"></app-activity-card>
+      <app-activity-card [activity]="activities[1]" class="w-full md:w-4/12 px-4 text-center"></app-activity-card>
+      <app-activity-card [activity]="activities[2]" class="pt-6 w-full md:w-4/12 px-4 text-center"></app-activity-card>
     </div>
     <div class="flex flex-wrap items-center mt-32">
       <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
