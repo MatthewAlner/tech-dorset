@@ -24,6 +24,7 @@ import { HeroImageComponent } from './home-page/hero-image/hero-image.component'
 import { ActivityCardComponent } from './home-page/activity-card/activity-card.component';
 import { AnimatedTitleComponent } from './home-page/animated-title/animated-title.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { QuestionItemComponent } from './home-page/question-item/question-item.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HostsSectionComponent,
     HeroImageComponent,
     ActivityCardComponent,
-    AnimatedTitleComponent
+    AnimatedTitleComponent,
+    QuestionItemComponent
   ],
   imports: [
     BrowserModule,

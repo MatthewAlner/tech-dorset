@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data.service';
+import { IQuestionandAnswer } from '../../models/qa-item';
 
 @Component({
   selector: 'app-qa-section',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QaSectionComponent implements OnInit {
 
-  constructor() { }
+  public questionsAndAnswers: IQuestionandAnswer[];
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.questionsAndAnswers = this.dataService.getQuestionsAndAnswers();
   }
 
 }
