@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data.service';
+import { IHost } from '../../models/host';
 
 @Component({
   selector: 'app-hosts-section',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HostsSectionComponent implements OnInit {
 
-  constructor() { }
+  public hosts: IHost[];
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.hosts = this.dataService.getHosts();
   }
 
 }

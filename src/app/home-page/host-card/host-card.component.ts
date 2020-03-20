@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IHost } from '../../models/host';
 
 @Component({
   selector: 'app-host-card',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HostCardComponent implements OnInit {
 
+  @Input() host: IHost;
   constructor() { }
 
   ngOnInit(): void {
