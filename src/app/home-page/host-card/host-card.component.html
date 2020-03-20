@@ -8,9 +8,17 @@
     />
     <div class="pt-6 text-center">
       <h5 class="text-xl font-bold">{{host.name}}</h5>
-<!--      <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">-->
-<!--        Web Developer-->
-<!--      </p>-->
+      <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+        Developer
+      </p>
+      <div class="mt-6">
+        <a *ngIf="host.twitter"
+          class="bg-blue-400 text-white rounded-full p-2"
+          [href]="'https://twitter.com/' + host.twitter"
+        >
+          <fa-icon [fixedWidth]="true" [icon]="icons.faTwitter"></fa-icon>
+        </a>
+      </div>
     </div>
   </div>
 </ng-container>
