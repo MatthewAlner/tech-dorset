@@ -13,6 +13,7 @@ import { WhenWhereSectionComponent } from './home-page/when-where-section/when-w
 import { QaSectionComponent } from './home-page/qa-section/qa-section.component';
 import { HostsSectionComponent } from './home-page/hosts-section/hosts-section.component';
 import { HeroImageComponent } from './home-page/hero-image/hero-image.component';
+import { InfoCardComponent } from './home-page/info-card/info-card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HeroImageComponent } from './home-page/hero-image/hero-image.component'
     WhenWhereSectionComponent,
     QaSectionComponent,
     HostsSectionComponent,
-    HeroImageComponent
+    HeroImageComponent,
+    InfoCardComponent
   ],
   imports: [
     BrowserModule,
