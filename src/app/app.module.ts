@@ -1,5 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+
+// Note we need a separate function as it's required
+// by the AOT compiler.
+export function playerFactory() {
+  return player;
+}
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +22,7 @@ import { QaSectionComponent } from './home-page/qa-section/qa-section.component'
 import { HostsSectionComponent } from './home-page/hosts-section/hosts-section.component';
 import { HeroImageComponent } from './home-page/hero-image/hero-image.component';
 import { ActivityCardComponent } from './home-page/activity-card/activity-card.component';
+import { AnimatedTitleComponent } from './home-page/animated-title/animated-title.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +37,13 @@ import { ActivityCardComponent } from './home-page/activity-card/activity-card.c
     QaSectionComponent,
     HostsSectionComponent,
     HeroImageComponent,
-    ActivityCardComponent
+    ActivityCardComponent,
+    AnimatedTitleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LottieModule.forRoot({ player: playerFactory })
   ],
   providers: [],
   bootstrap: [AppComponent]
