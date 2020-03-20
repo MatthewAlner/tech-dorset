@@ -14,10 +14,10 @@ export class DataService {
   public getHosts() {
     const hosts: IHost[] = [];
     hosts.push({name: 'Matt', imageURL: 'assets/hosts/matt.jpg'});
-    hosts.push({name: 'Chris', imageURL: 'assets/hosts/default.svg'});
+    hosts.push({name: 'Chris', imageURL: 'assets/hosts/chris.jpg'});
     hosts.push({name: 'Tom', imageURL: 'assets/hosts/default.svg'});
     hosts.push({name: 'Dave', imageURL: 'assets/hosts/default.svg'});
-    hosts.push({name: 'Alex', imageURL: 'assets/hosts/default.svg'});
+    hosts.push({name: 'Alex', imageURL: 'assets/hosts/rossy.jpg'});
     return hosts;
   }
 
