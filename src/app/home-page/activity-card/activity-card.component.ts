@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IActivity } from '../../models/activity';
+import { faChalkboardTeacher, faPizzaSlice, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-activity-card',
@@ -8,9 +9,16 @@ import { IActivity } from '../../models/activity';
 })
 export class ActivityCardComponent implements OnInit {
 
+  public icons = {
+    faPizzaSlice,
+    faChalkboardTeacher,
+    faProjectDiagram
+  };
+
   @Input() activity: IActivity;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
 
