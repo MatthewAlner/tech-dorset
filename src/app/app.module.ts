@@ -23,6 +23,7 @@ import { HostsSectionComponent } from './home-page/hosts-section/hosts-section.c
 import { HeroImageComponent } from './home-page/hero-image/hero-image.component';
 import { ActivityCardComponent } from './home-page/activity-card/activity-card.component';
 import { AnimatedTitleComponent } from './home-page/animated-title/animated-title.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { AnimatedTitleComponent } from './home-page/animated-title/animated-titl
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LottieModule.forRoot({ player: playerFactory })
+    LottieModule.forRoot({ player: playerFactory }),
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

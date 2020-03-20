@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons/faMapMarkerAlt';
 
 @Component({
   selector: 'app-when-where-section',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class WhenWhereSectionComponent implements OnInit {
+
+  public icons = {
+    faMapMarkerAlt
+  };
 
   constructor() { }
 
