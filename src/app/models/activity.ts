@@ -1,6 +1,6 @@
 export interface IActivity {
   title: string;
   description: string;
-  colour: string;
+  tailwindColour: string;
   icon: string;
 }
