@@ -22,9 +22,9 @@ export class DataService {
 
   public getActivities() {
     const activity: IActivity[] = [];
-    activity.push({colour: 'green', icon: 'faChalkboardTeacher', title: 'Talks', description: 'we have talks'});
-    activity.push({colour: 'red', icon: 'faPizzaSlice', title: 'Pizza', description: 'we have pizza'});
-    activity.push({colour: 'blue', icon: 'faProjectDiagram', title: 'Networking', description: 'we have networking'});
+    activity.push({tailwindColour: 'bg-green-400', icon: 'faChalkboardTeacher', title: 'Talks', description: 'we have talks'});
+    activity.push({tailwindColour: 'bg-red-400', icon: 'faPizzaSlice', title: 'Pizza', description: 'we have pizza'});
+    activity.push({tailwindColour: 'bg-blue-400', icon: 'faProjectDiagram', title: 'Networking', description: 'we have networking'});
     return activity;
   }
 
