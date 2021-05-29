@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { IActivity } from '../../models/activity';
 import { DataService } from '../../services/data.service';
-import { faTicketAlt } from '@fortawesome/free-solid-svg-icons';
+import { faTicketAlt } from '@fortawesome/free-solid-svg-icons/faTicketAlt';
+import { faViruses } from '@fortawesome/free-solid-svg-icons/faViruses';
 
 @Component({
   selector: 'app-what-section',
@@ -11,7 +12,8 @@ import { faTicketAlt } from '@fortawesome/free-solid-svg-icons';
 export class WhatSectionComponent implements OnInit {
 
   public icons = {
-    faTicketAlt
+    faTicketAlt,
+    faViruses
   };
 
   activities: IActivity[];
